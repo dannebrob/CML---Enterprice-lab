@@ -1,0 +1,91 @@
+Building configuration...
+
+Current configuration : 1170 bytes
+!
+! Last configuration change at 15:13:14 UTC Sat Feb 21 2026
+!
+version 17.16
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no logging console
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain name lab.local
+ip cef
+login on-success log
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+memory free low-watermark processor 79983
+!
+!
+spanning-tree mode rapid-pvst
+!
+username cisco privilege 15 password 0 cisco
+crypto key generate rsa modulus 2048
+ssh version 2
+!
+interface Ethernet0/0
+ description Link to E1
+ ip address 10.20.0.2 255.255.255.0
+ ip ospf 1 area 10
+!
+interface Ethernet0/1
+ no ip address
+ shutdown
+!
+interface Ethernet0/2
+ no ip address
+ shutdown
+!
+interface Ethernet0/3
+ no ip address
+ shutdown
+!
+router ospf 1
+ router-id 10.10.10.10
+!
+ip route 0.0.0.0 0.0.0.0 10.20.0.1
+!
+line con 0
+ exec-timeout 0 0
+ logging synchronous
+line vty 0 4
+ exec-timeout 0 0
+ login local
+ transport input ssh
+!
+!
+!
+!
+end
