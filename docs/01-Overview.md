@@ -1,6 +1,6 @@
-## LAB OVERVIEW and DESIGN DECISIONS
-
 This is the first post in the series of posts about my enterprise lab, this post will cover the overview of the lab, the design decisions I made, and the goals I have for this lab. I want to share my knowledge and experience with others who are interested in learning about enterprise network design and configuration, and I hope that this lab will be a valuable resource for anyone looking to enhance their networking skills. If you are a network engineer, a student, or just someone interested in learning about enterprise networks, this lab is for you.
+
+## LAB OVERVIEW and DESIGN DECISIONS
 
 ![OSPF Topology](diagrams/overview.png)
 
@@ -54,12 +54,14 @@ for devices in Area 20. It will also be configured with OSPF and will have inter
 | **R3** | Eth0/0 | 10.40.0.2/30 | Link to E1 | 30 | 30.30.30.30 |
 
 ### Design decisions:
+
 - I chose to use OSPF as the routing protocol for this lab because it is widely used in enterprise networks and provides a good balance of features and complexity for learning purposes.
 - The lab is designed to simulate a real-world enterprise network, with a core router (E1) that connects to multiple area routers (R1, R2, R3). This design allows users to understand how to configure and manage a hierarchical network architecture.
 - The use of a DMZ (Demilitarized Zone) in the lab allows users to understand how to configure security measures and manage traffic between the internal network and external resources. The DMZ will be connected to the core router (E1) and will include hosts that simulate servers and host services that need to be accessible from the outside world while still being protected from direct access to the internal network. 
 - Its also a playground for me to test and learn new technologies, so I will be adding more devices and configurations as I go along. The lab is designed to be flexible and adaptable, allowing users to experiment with different scenarios and configurations to enhance their learning experience.
 
 ### Challenges and solutions:
+
 When setting up the I started with the core router (E1) and then added the area routers. An issue i faces right away was to make the routes being visible to each other, which was due to the fact that I forgot to set the OSPF area for the interfaces on E1. Once I set the correct areas for each interface, the routes were visible and the lab was functioning as expected. This highlights the importance of paying attention to details when configuring network devices, as even a small oversight can lead to connectivity issues. 
 
 Also setting up the DMZ host to be able to ping the internal and external network was a bit tricky, and I ended up using two interfaces on the DMZ host, one connected to the DMZ network and another connected to the internal network, and then configuring routing on the DMZ host to allow it to communicate with both networks. This was a good learning experience in understanding how to configure routing and connectivity in a complex network environment. 
