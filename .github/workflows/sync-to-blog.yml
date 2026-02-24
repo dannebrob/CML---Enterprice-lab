@@ -1,0 +1,40 @@
+# This is a basic workflow to help yname: Sync Markdown files to blog
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "docs/**"     # <-- trigga när något i docs ändras
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repo (Repo A)
+        uses: actions/checkout@v4
+
+      - name: Checkout blog repo (Repo B)
+        uses: actions/checkout@v4
+        with:
+          repository: dannebrob/dannebrob.github.io   # <-- ändra till ditt bloggrepo
+          token: ${{ secrets.PAT }}                   # <-- PAT som secret i Repo A
+          path: blog
+
+      - name: Copy all MD files from docs/ to blog/_posts/
+        run: |
+          mkdir -p blog/_posts
+          for file in docs/*.md; do
+            filename=$(basename "$file")
+            cp "$file" "blog/_posts/$(date +%Y-%m-%d)-$filename"
+          done
+
+      - name: Commit and push changes to blog
+        run: |
+          cd blog
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Sync MD files from Repo A" || echo "No changes to commit"
+          git push
