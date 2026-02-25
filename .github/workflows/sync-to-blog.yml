@@ -23,11 +23,11 @@ jobs:
           token: ${{ secrets.PAT }}
           path: blog
 
-      - name: Copy images from docs/diagrams/ to blog/images/
+      - name: Copy images from diagrams/ to blog/images/
         run: |
           mkdir -p blog/images
-          if [ -d docs/diagrams ]; then
-            cp docs/diagrams/* blog/images/ || true
+          if [ -d diagrams ]; then
+            cp diagrams/* blog/images/ || true
           fi
 
       - name: Copy and rewrite MD files from docs/ to blog/_posts/
