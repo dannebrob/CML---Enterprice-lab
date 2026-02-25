@@ -1,6 +1,4 @@
-Uppdatera denna med rättat filename
-
-This is a basic workflow to help yname: Sync Markdown files to blog
+#This is a basic workflow to help yname: Sync Markdown files to blog
 
 on:
   push:
@@ -29,7 +27,8 @@ jobs:
           mkdir -p blog/_posts
           for file in docs/*.md; do
             filename=$(basename "$file")
-            cp "$file" "blog/_posts/$(date +%Y-%m-%d)-$filename"
+            newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
+            cp "$file" "blog/_posts/$newname"
           done
 
       - name: Commit and push changes to blog
