@@ -23,12 +23,13 @@ jobs:
           path: blog
 
       - name: Copy all MD files from docs/ to blog/_posts/
-        run: |
-          mkdir -p blog/_posts
-          for file in docs/*.md; do
-            filename=$(basename "$file")
-            cp "$file" "blog/_posts/$(date +%Y-%m-%d)-$filename"
-          done
+  run: |
+    mkdir -p blog/_posts
+    for file in docs/*.md; do
+      filename=$(basename "$file")
+      newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
+      cp "$file" "blog/_posts/$newname"
+    done
 
       - name: Commit and push changes to blog
         run: |
