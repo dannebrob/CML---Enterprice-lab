@@ -1,11 +1,11 @@
-# This is a basic workflow to sync Markdown files to your blog
+# sync blogposts and images
 name: Sync Markdown files to blog
 
 on:
   push:
     branches: [ "main" ]
     paths:
-      - "docs/**"
+      - "docs/**"     # <-- trigga när något i docs ändras
   workflow_dispatch:
 
 jobs:
@@ -23,15 +23,22 @@ jobs:
           token: ${{ secrets.PAT }}
           path: blog
 
-      - name: Copy all MD files from docs/ to blog/_posts/
-        env:
-          REPO_NAME: ${{ github.event.repository.name }}
+      - name: Copy images from docs/diagrams/ to blog/images/
+        run: |
+          mkdir -p blog/images
+          if [ -d docs/diagrams ]; then
+            cp docs/diagrams/* blog/images/ || true
+          fi
+
+      - name: Copy and rewrite MD files from docs/ to blog/_posts/
         run: |
           mkdir -p blog/_posts
           for file in docs/*.md; do
             filename=$(basename "$file")
-            newname="$(date +%Y-%m-%d)-$REPO_NAME-$filename"
-            cp "$file" "blog/_posts/$newname"
+            newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
+
+            # Ändra bildlänkar från diagrams/... till images/...
+            sed 's#](diagrams/#](images/#g' "$file" > "blog/_posts/$newname"
           done
 
       - name: Commit and push changes to blog
@@ -40,5 +47,5 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Sync MD files from Repo A" || echo "No changes to commit"
+          git commit -m "Sync MD files and images from Repo A" || echo "No changes to commit"
           git push
