@@ -37,8 +37,8 @@ jobs:
             filename=$(basename "$file")
             newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
 
-            # Ändra bildlänkar från diagrams/... till /images/...
-            sed 's#](diagrams/#](/images/#g' "$file" > "blog/_posts/$newname"
+            # Ändra bildlänkar från /diagrams/... till /images/...
+            sed 's#](/diagrams/#](/images/#g' "$file" > "blog/_posts/$newname"
           done
 
       - name: Commit and push changes to blog
