@@ -1,4 +1,3 @@
-# sync blogposts and images
 name: Sync Markdown files to blog
 
 on:
@@ -6,6 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - "docs/**"
+      - "diagrams/**"
   workflow_dispatch:
 
 jobs:
@@ -23,6 +23,7 @@ jobs:
           token: ${{ secrets.PAT }}
           path: blog
 
+      # Kopiera bilder från diagrams/ → blog/images
       - name: Copy images from diagrams/ to blog/images/
         run: |
           mkdir -p blog/images
@@ -30,15 +31,34 @@ jobs:
             cp diagrams/* blog/images/ || true
           fi
 
+      # Kopiera och skriv om ALLA MD-filer rekursivt från docs/
       - name: Copy and rewrite MD files from docs/ to blog/_posts/
         run: |
           mkdir -p blog/_posts
-          for file in docs/*.md; do
+
+          find docs -type f -name "*.md" | while read file; do
             filename=$(basename "$file")
+            dirname=$(basename "$(dirname "$file")")   # undermapp, t.ex. "wls"
+            cleanname="${filename%.md}"
+
+            # Snygg titel: "WLS – Intro (RepoName)"
+            title="$(echo "$dirname" | tr '-' ' ' | sed 's/.*/\u&/') – $(echo "$cleanname" | tr '-' ' ' | sed 's/.*/\u&/') (${{ github.event.repository.name }})"
+
+            # Kategori baserat på undermappen
+            category="$(echo "$dirname" | tr '[:upper:]' '[:lower:]')"
+
             newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
 
-            # Ändra bildlänkar från /diagrams/... till /images/...
-            sed 's#](/diagrams/#](/images/#g' "$file" > "blog/_posts/$newname"
+            {
+              echo "---"
+              echo "title: \"$title\""
+              echo "categories: [\"$category\"]"
+              echo "source_repo: \"${{ github.event.repository.name }}\""
+              echo "source_path: \"$file\""
+              echo "---"
+              echo
+              sed 's#](/diagrams/#](/images/#g' "$file"
+            } > "blog/_posts/$newname"
           done
 
       - name: Commit and push changes to blog
