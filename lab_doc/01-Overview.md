@@ -4,6 +4,8 @@ This is the first post in the series of posts about my enterprise lab, this post
 
 ![OSPF Topology](/diagrams/overview1.png)
 
+Find the github repository for the lab files [here](https://github.com/dannebrob/CML---Enterprice-lab)
+
 ### What is this lab about? And why should you care?
 
 This lab is about designing and configuring an enterprise network using Cisco Modeling Labs (**Cisco CML**). Cisco CML is a powerful network simulation tool that allows users to create and test network designs in a virtual environment. By simulating a real-world enterprise network environment, users can experiment with various configurations and scenarios without the need for physical hardware, making it an ideal learning tool for those looking to enhance their networking skills. 
@@ -11,6 +13,8 @@ This lab is about designing and configuring an enterprise network using Cisco Mo
 Throughout this lab I will be sharing my design decisions, the challenges I faced, and the solutions I implemented to overcome those challenges. This lab is not only a learning resource for others but also a personal project for me to test and learn new technologies in a practical setting.
 
 ### Requirements
+
+You fins the labfiles in the [GitHub repository](https://github.com/dannebrob/CML---Enterprice-lab), which includes the topology files, configuration files, and notes for each device in the lab. These files will be updated as I continue to work on the lab and add more devices and configurations.
 
 To follow along with this lab, you will need to have access to Cisco Modeling Labs (Cisco CML with atleast Personal subscription) and a basic understanding of networking concepts, including routing protocols, switching, and network security. Familiarity with OSPF (Open Shortest Path First) will be particularly helpful, as it is the routing protocol used in this lab. Additionally, having some experience with network automation tools like Ansible will be beneficial, as I will be using Ansible for network management and automation in this lab. I will provide explanations to why I chose different technologies and configurations, but having a basic understanding of these concepts will help you get the most out of this lab and enhance your learning experience.
 
