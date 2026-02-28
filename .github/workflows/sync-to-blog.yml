@@ -4,72 +4,71 @@ on:
   push:
     branches: [ "main" ]
     paths:
-    - "lab_doc/**"
-    - "diagrams/**"
+      - "lab_doc/**"
+      - "diagrams/**"
   workflow_dispatch:
-
 
 jobs:
   sync:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout source repo (Repo A)
-      uses: actions/checkout@v4
+      - name: Checkout source repo (Repo A)
+        uses: actions/checkout@v4
 
-    - name: Checkout blog repo (Repo B)
-      uses: actions/checkout@v4
-      with:
-        repository: dannebrob/dannebrob.github.io
-        token: ${{ secrets.PAT }}
-        path: blog
+      - name: Checkout blog repo (Repo B)
+        uses: actions/checkout@v4
+        with:
+          repository: dannebrob/dannebrob.github.io
+          token: ${{ secrets.PAT }}
+          path: blog
 
-    # Kopiera bilder från diagrams/ → blog/images
-    - name: Copy images from diagrams/ to blog/images/
-      run: |
-        mkdir -p blog/images
-        if [ -d diagrams ]; then
-          cp diagrams/* blog/images/ || true
-        fi
+      # Kopiera bilder från diagrams/ → blog/images
+      - name: Copy images from diagrams/ to blog/images/
+        run: |
+          mkdir -p blog/images
+          if [ -d diagrams ]; then
+            cp diagrams/* blog/images/ || true
+          fi
 
-    # Kopiera och skriv om ALLA MD-filer rekursivt från docs/
-    - name: Copy and rewrite MD files from docs/ to blog/_posts/
-      run: |
-        mkdir -p blog/_posts
+      # Kopiera och skriv om ALLA MD-filer rekursivt från lab_doc/
+      - name: Copy and rewrite MD files from lab_doc/ to blog/_posts/
+        run: |
+          mkdir -p blog/_posts
 
-        find docs -type f -name "*.md" | while read file; do
-          filename=$(basename "$file")
-          
-          # undermapp direkt under docs/, t.ex. docs/wls/intro.md → wls
-          dirname=$(basename "$(dirname "$file")")
+          find lab_doc -type f -name "*.md" | while read file; do
+            filename=$(basename "$file")
 
-          cleanname="${filename%.md}"
+            # undermapp direkt under lab_doc/, t.ex. lab_doc/wls/intro.md → wls
+            dirname=$(basename "$(dirname "$file")")
 
-          # Snygg titel: "WLS – Intro (RepoName)"
-          title="$(echo "$dirname" | tr '-' ' ' | sed 's/.*/\u&/') – $(echo "$cleanname" | tr '-' ' ' | sed 's/.*/\u&/') (${{ github.event.repository.name }})"
+            cleanname="${filename%.md}"
 
-          # Kategori baserat på undermappen
-          category="$(echo "$dirname" | tr '[:upper:]' '[:lower:]')"
+            # Snygg titel: "WLS – Intro (RepoName)"
+            title="$(echo "$dirname" | tr '-' ' ' | sed 's/.*/\u&/') – $(echo "$cleanname" | tr '-' ' ' | sed 's/.*/\u&/') (${{ github.event.repository.name }})"
 
-          newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
+            # Kategori baserat på undermappen
+            category="$(echo "$dirname" | tr '[:upper:]' '[:lower:]')"
 
-          {
-            echo "---"
-            echo "title: \"$title\""
-            echo "categories: [\"$category\"]"
-            echo "source_repo: \"${{ github.event.repository.name }}\""
-            echo "source_path: \"$file\""
-            echo "---"
-            echo
-            sed 's#](/diagrams/#](/images/#g' "$file"
-          } > "blog/_posts/$newname"
-        done
+            newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
 
-    - name: Commit and push changes to blog
-      run: |
-        cd blog
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
-        git add .
-        git commit -m "Sync MD files and images from Repo A" || echo "No changes to commit"
-        git push
+            {
+              echo "---"
+              echo "title: \"$title\""
+              echo "categories: [\"$category\"]"
+              echo "source_repo: \"${{ github.event.repository.name }}\""
+              echo "source_path: \"$file\""
+              echo "---"
+              echo
+              sed 's#](/diagrams/#](/images/#g' "$file"
+            } > "blog/_posts/$newname"
+          done
+
+      - name: Commit and push changes to blog
+        run: |
+          cd blog
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Sync MD files and images from Repo A" || echo "No changes to commit"
+          git push
