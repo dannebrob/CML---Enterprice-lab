@@ -1,74 +1,75 @@
-name:” hamnar i rubriken Sync Markdown files to blog
+name: Sync Markdown files to blog
 
 on:
   push:
     branches: [ "main" ]
     paths:
+    - "docs/**"
+    - "diagrams/**"
+  workflow_dispatch:
+
 
 jobs:
   sync:
-:
-      - "docs/**"
-      - "diagrams/**"
-  workflow_dispatch    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout A)
-        uses source repo (Repo: actions/checkout@v4
+    - name: Checkout source repo (Repo A)
+      uses: actions/checkout@v4
 
-      - name: Checkout blog repo (Repo B)
-        uses: actions/checkout@v4
-        with:
-          repository: dannebrob/danne token: ${{ secretsbrob.github.io
-         .PAT }}
-          - name: Copy images path: blog
+    - name: Checkout blog repo (Repo B)
+      uses: actions/checkout@v4
+      with:
+        repository: dannebrob/dannebrob.github.io
+        token: ${{ secrets.PAT }}
+        path: blog
 
-      from diagrams/ to # Kopiera bilder från diagrams/ → blog/images
-      blog/images/
-       
-          if [ - run: |
-          mkdir -p blog/imagesd diagrams ]; then
-            cp diagrams true
-          fi/* blog/images/ ||
+    # Kopiera bilder från diagrams/ → blog/images
+    - name: Copy images from diagrams/ to blog/images/
+      run: |
+        mkdir -p blog/images
+        if [ -d diagrams ]; then
+          cp diagrams/* blog/images/ || true
+        fi
 
-      # Kopiera och skriv om ALLA MD-filer rekursivt från docs/
-      - name: Copy and rewrite MD files from docs/ to blog/_posts/
-        run: |
-         posts
+    # Kopiera och skriv om ALLA MD-filer rekursivt från docs/
+    - name: Copy and rewrite MD files from docs/ to blog/_posts/
+      run: |
+        mkdir -p blog/_posts
 
-          mkdir -p blog/_ find docs -type while read file f -name "*.md" |; do
-            filename=$(basename            # underm "$file")
-            
-app direkt under docs/, t.ex. docs/wls/intro.md → wls
-            dirname=$(basename "$(dirname cleanname="${filename "$file")")
+        find docs -type f -name "*.md" | while read file; do
+          filename=$(basename "$file")
+          
+          # undermapp direkt under docs/, t.ex. docs/wls/intro.md → wls
+          dirname=$(basename "$(dirname "$file")")
 
-           %.md}"
+          cleanname="${filename%.md}"
 
-            # Snygg titel: " title="$(echo "$WLS – Intro (RepoName)"
-           dirname" | tr '-' ' ' | sed 's/.*/\u&/') – $(echo "$cleanname" | tr '-' ' ' | sed 's/.*/\u&/') (${{ github.name }})"
+          # Snygg titel: "WLS – Intro (RepoName)"
+          title="$(echo "$dirname" | tr '-' ' ' | sed 's/.*/\u&/') – $(echo "$cleanname" | tr '-' ' ' | sed 's/.*/\u&/') (${{ github.event.repository.name }})"
 
-           .event.repository på undermappen
-" | tr '[:upper:] # Kategori baserat            category="$(echo "$dirname' '[:lower:]')"
+          # Kategori baserat på undermappen
+          category="$(echo "$dirname" | tr '[:upper:]' '[:lower:]')"
 
-            newname="$(date +%Y-%m-%.repository.named)-${{ github.event }}-$filename"
+          newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
 
-            {
-              echo "---"
-              echo "title: \"$ echo "categoriestitle\""
-             : [\"$category\"]"
-              echo "source_repo: \"${{ github.event.repository.name echo "source_path }}\""
-             : \"$file\""
-              echo "---"
-              echo
-             /$newname"
-          sed 's#](/diagrams/#](/images/#g' "$file"
-            } > "blog/_posts changes to blog done
+          {
+            echo "---"
+            echo "title: \"$title\""
+            echo "categories: [\"$category\"]"
+            echo "source_repo: \"${{ github.event.repository.name }}\""
+            echo "source_path: \"$file\""
+            echo "---"
+            echo
+            sed 's#](/diagrams/#](/images/#g' "$file"
+          } > "blog/_posts/$newname"
+        done
 
-      - name: Commit and push
-        run: |
-          cd blog
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add .
-          git commit -m "Sync MD files and images from Repo A" || echo "No changes to commit"
-          git push
+    - name: Commit and push changes to blog
+      run: |
+        cd blog
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add .
+        git commit -m "Sync MD files and images from Repo A" || echo "No changes to commit"
+        git push
