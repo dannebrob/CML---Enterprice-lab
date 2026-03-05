@@ -31,26 +31,35 @@ jobs:
             cp diagrams/* blog/images/ || true
           fi
 
-      # Kopiera och skriv om ALLA MD-filer rekursivt från lab_doc/
+      # Kopiera och skriv om MD-filer från lab_doc/ → blog/_posts/
       - name: Copy and rewrite MD files from lab_doc/ to blog/_posts/
         run: |
           mkdir -p blog/_posts
 
+          # Snyggt repo-namn (Enterprise Lab)
+          pretty_repo="$(echo "${{ github.event.repository.name }}" | tr '-' ' ' | sed 's/.*/\u&/')"
+
           find lab_doc -type f -name "*.md" | while read file; do
             filename=$(basename "$file")
-
-            # undermapp direkt under lab_doc/, t.ex. lab_doc/wls/intro.md → wls
             dirname=$(basename "$(dirname "$file")")
-
             cleanname="${filename%.md}"
 
-            # Snygg titel: "WLS – Intro (RepoName)"
-            title="$(echo "$dirname" | tr '-' ' ' | sed 's/.*/\u&/') – $(echo "$cleanname" | tr '-' ' ' | sed 's/.*/\u&/') (${{ github.event.repository.name }})"
+            # Snygg titel baserat på filnamnet
+            pretty_cleanname="$(echo "$cleanname" | tr '-' ' ' | sed 's/.*/\u&/')"
+            title="$pretty_cleanname ($pretty_repo)"
 
             # Kategori baserat på undermappen
             category="$(echo "$dirname" | tr '[:upper:]' '[:lower:]')"
 
-            newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
+            # Leta efter befintlig post baserat på source_path
+            existing=$(grep -Rl "source_path: \"$file\"" blog/_posts/ || true)
+
+            if [ -n "$existing" ]; then
+              echo "Updating existing post: $existing"
+              newname=$(basename "$existing")
+            else
+              newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
+            fi
 
             {
               echo "---"
@@ -61,14 +70,4 @@ jobs:
               echo "---"
               echo
               sed 's#](/diagrams/#](/images/#g' "$file"
-            } > "blog/_posts/$newname"
-          done
-
-      - name: Commit and push changes to blog
-        run: |
-          cd blog
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add .
-          git commit -m "Sync MD files and images from Repo A" || echo "No changes to commit"
-          git push
+           
