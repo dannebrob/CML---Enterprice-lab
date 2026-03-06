@@ -47,14 +47,15 @@ jobs:
 
             category=$(echo "$dirname" | tr '[:upper:]' '[:lower:]')
 
-            # NY FILNAMNSLOGIK (stabil, ingen datum-del)
-            slug=$(echo "$file" | tr '/' '-' | tr '[:upper:]' '[:lower:]')
-            newname="${repo_name}-${slug}.md"
-            
-            # Om filen redan finns → uppdatera
-            if [ -f "blog/_posts/$newname" ]; then
-              echo "Updating existing post: $newname"
+            # Leta efter befintlig post baserat på source_path
+            existing=$(grep -Rl "source_path: \"$file\"" blog/_posts/ || true)
+
+            if [ -n "$existing" ]; then
+              echo "Updating existing post: $existing"
+              newname=$(basename "$existing")
             else
+              # ÅTERSTÄLLT: datum-baserat filnamn
+              newname="$(date +%Y-%m-%d)-$repo_name-$filename"
               echo "Creating new post: $newname"
             fi
 
@@ -78,4 +79,3 @@ jobs:
           git add .
           git commit -m "Sync MD files and images from Repo A" || echo "No changes to commit"
           git push
-
