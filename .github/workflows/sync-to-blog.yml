@@ -34,10 +34,10 @@ jobs:
         run: |
           mkdir -p blog/_posts
 
-          # Snyggt repo-namn (Enterprise Lab)
+          # Plocka ut repo-namn en gång
           repo_name="${{ github.event.repository.name }}"
           pretty_repo=$(echo "$repo_name" | tr '-' ' ' | sed 's/.*/\u&/')
-          
+
           find lab_doc -type f -name "*.md" | while read file; do
             filename=$(basename "$file")
             dirname=$(basename "$(dirname "$file")")
@@ -57,21 +57,20 @@ jobs:
               echo "Updating existing post: $existing"
               newname=$(basename "$existing")
             else
-              newname="$(date +%Y-%m-%d)-${{ github.event.repository.name }}-$filename"
+              newname="$(date +%Y-%m-%d)-$repo_name-$filename"
             fi
 
             {
               echo "---"
               echo "title: \"$title\""
               echo "categories: [\"$category\"]"
-              echo "source_repo: \"${{ github.event.repository.name }}\""
+              echo "source_repo: \"$repo_name\""
               echo "source_path: \"$file\""
               echo "---"
               echo
               sed 's#](/diagrams/#](/images/#g' "$file"
             } > "blog/_posts/$newname"
           done
-
       - name: Commit and push changes to blog
         run: |
           cd blog
