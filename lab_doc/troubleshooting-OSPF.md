@@ -1,6 +1,7 @@
 In this lab, I focused on troubleshooting OSPF. The main issue was that routes were not being advertised between the core router (E1) and the area routers (R1, R2, R3). To make it realistic, I created an IT ticket for myself to troubleshoot the problem. I will share the steps I took to identify and resolve the issue.
 
 # Troubleshooting OSPF
+Find the github repository for the lab files [here](https://github.com/dannebrob/CML---Enterprice-lab)
 
 ## Ticket ID: OSPF‑Troubleshooting‑INC0000456
 
