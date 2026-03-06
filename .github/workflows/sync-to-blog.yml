@@ -23,7 +23,6 @@ jobs:
           token: ${{ secrets.PAT }}
           path: blog
 
-      # Kopiera bilder från diagrams/ → blog/images
       - name: Copy images from diagrams/ to blog/images/
         run: |
           mkdir -p blog/images
@@ -31,13 +30,12 @@ jobs:
             cp diagrams/* blog/images/ || true
           fi
 
-      # Kopiera och skriv om MD-filer från lab_doc/ → blog/_posts/
       - name: Copy and rewrite MD files from lab_doc/ to blog/_posts/
         run: |
           mkdir -p blog/_posts
 
           # Snyggt repo-namn (Enterprise Lab)
-          pretty_repo="$(echo "${{ github.event.repository.name }}" | tr '-' ' ' | sed 's/.*/\u&/')"
+          pretty_repo=$(echo "${{ github.event.repository.name }}" | tr '-' ' ' | sed 's/.*/\u&/')
 
           find lab_doc -type f -name "*.md" | while read file; do
             filename=$(basename "$file")
@@ -45,11 +43,11 @@ jobs:
             cleanname="${filename%.md}"
 
             # Snygg titel baserat på filnamnet
-            pretty_cleanname="$(echo "$cleanname" | tr '-' ' ' | sed 's/.*/\u&/')"
+            pretty_cleanname=$(echo "$cleanname" | tr '-' ' ' | sed 's/.*/\u&/')
             title="$pretty_cleanname ($pretty_repo)"
 
             # Kategori baserat på undermappen
-            category="$(echo "$dirname" | tr '[:upper:]' '[:lower:]')"
+            category=$(echo "$dirname" | tr '[:upper:]' '[:lower:]')
 
             # Leta efter befintlig post baserat på source_path
             existing=$(grep -Rl "source_path: \"$file\"" blog/_posts/ || true)
