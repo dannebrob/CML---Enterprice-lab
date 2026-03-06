@@ -1,1749 +1,1964 @@
 annotations:
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 192.168.255.100
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: -160.0
-    y1: 0.0
-    z_index: 0
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 192.168.255.1
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: -160.0
-    y1: -40.0
-    z_index: 1
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 192.168.255.20
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: 160.0
-    y1: 0.0
-    z_index: 2
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 10.99.0.100
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: -80.0
-    y1: 40.0
-    z_index: 3
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 10.99.0.1/24
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: 80.0
-    y1: 40.0
-    z_index: 4
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 10.20.0.1/30
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: -280.0
-    y1: 40.0
-    z_index: 5
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 10.40.0.50/24
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: 40.0
-    y1: 160.0
-    z_index: 6
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 10.30.0.50/24
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: -160.0
-    y1: 160.0
-    z_index: 6
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 10.20.0.50/24
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: -360.0
-    y1: 160.0
-    z_index: 6
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 10.30.0.1/30
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: -160.0
-    y1: 120.0
-    z_index: 5
-  - border_color: '#00000000'
-    border_style: ''
-    color: '#808080FF'
-    rotation: 0
-    text_bold: false
-    text_content: 10.40.0.1/30
-    text_font: monospace
-    text_italic: false
-    text_size: 12
-    text_unit: pt
-    thickness: 1
-    type: text
-    x1: -80.0
-    y1: 80.0
-    z_index: 5
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 192.168.255.100
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: -200
+  y1: -40
+  z_index: 0
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 192.168.255.1
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: -200
+  y1: -80
+  z_index: 1
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 192.168.255.20
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: 160.0
+  y1: 0.0
+  z_index: 2
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 10.99.0.100
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: -80
+  y1: 40.0
+  z_index: 3
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 10.99.0.1/24
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: 80.0
+  y1: 40.0
+  z_index: 4
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 10.20.0.1/30
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: -280
+  y1: 40.0
+  z_index: 5
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 10.40.0.2/30
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: -40
+  y1: 120.0
+  z_index: 6
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 10.30.0.2/30
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: -160
+  y1: 160.0
+  z_index: 6
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 10.20.0.2/30
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: -320
+  y1: 120.0
+  z_index: 6
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 10.30.0.1/30
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: -160
+  y1: 120.0
+  z_index: 5
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: 10.40.0.1/30
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: -80
+  y1: 80.0
+  z_index: 5
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: WAN-LINK
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: -240
+  y1: -120
+  z_index: 7
+- border_color: '#00000000'
+  border_style: ''
+  color: '#808080FF'
+  rotation: 0
+  text_bold: false
+  text_content: WAN-LINK
+  text_font: monospace
+  text_italic: false
+  text_size: 12
+  text_unit: pt
+  thickness: 1
+  type: text
+  x1: 120.0
+  y1: -120
+  z_index: 7
 smart_annotations:
-  - tag: edge-router
-    is_on: true
-    padding: 35
-    label: edge-router
-    tag_offset_x: 0
-    tag_offset_y: 0
-    tag_size: 14
-    group_distance: 400
-    thickness: 1
-    border_style: ''
-    fill_color: '#005C9980'
-    border_color: '#00000080'
-    z_index: 2
-  - tag: router
-    is_on: true
-    padding: 35
-    label: router
-    tag_offset_x: 0
-    tag_offset_y: 0
-    tag_size: 14
-    group_distance: 400
-    thickness: 1
-    border_style: ''
-    fill_color: '#A7A8AA80'
-    border_color: '#00000080'
-    z_index: 1
+- tag: edge-router
+  is_on: true
+  padding: 35
+  label: edge-router
+  tag_offset_x: 0
+  tag_offset_y: 0
+  tag_size: 14
+  group_distance: 400
+  thickness: 1
+  border_style: ''
+  fill_color: '#005C9980'
+  border_color: '#00000080'
+  z_index: 2
+- tag: router
+  is_on: true
+  padding: 35
+  label: router
+  tag_offset_x: 0
+  tag_offset_y: 0
+  tag_size: 14
+  group_distance: 400
+  thickness: 1
+  border_style: ''
+  fill_color: '#A7A8AA80'
+  border_color: '#00000080'
+  z_index: 1
 nodes:
-  - boot_disk_size: null
-    configuration: []
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n0
-    image_definition: null
-    label: ext-conn-0
-    node_definition: external_connector
-    parameters: {}
-    ram: null
-    tags: []
-    x: -120
-    y: -80
-    interfaces:
-      - id: i0
-        label: port
-        mac_address: null
-        type: physical
-        slot: 0
-  - boot_disk_size: null
-    configuration:
-      - name: ios_config.txt
-        content: |-
-          Building configuration...
+- boot_disk_size: null
+  configuration: []
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n0
+  image_definition: null
+  label: ext-conn-0
+  node_definition: external_connector
+  parameters: {}
+  ram: null
+  tags: []
+  x: -120
+  y: -120
+  interfaces:
+  - id: i0
+    label: port
+    mac_address: null
+    type: physical
+    slot: 0
+- boot_disk_size: null
+  configuration:
+  - name: ios_config.txt
+    content: "Building configuration...
 
-          Current configuration : 1635 bytes
-          !
-          ! Last configuration change at 15:13:25 UTC Sat Feb 21 2026
-          !
-          version 17.16
-          service timestamps debug datetime msec
-          service timestamps log datetime msec
-          !
-          hostname E1
-          !
-          boot-start-marker
-          boot-end-marker
-          !
-          !
-          no logging console
-          no aaa new-model
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          ip domain name lab.local
-          ip cef
-          login on-success log
-          no ipv6 cef
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          memory free low-watermark processor 79983
-          !
-          !
-          spanning-tree mode rapid-pvst
-          !
-          enable password cisco
-          !
-          username cisco privilege 15 password 0 cisco
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          interface Loopback0
-           description Loopback interface
-           ip address 1.1.1.1 255.255.255.255
-           ip ospf 1 area 0
-          !
-          interface Ethernet0/0
-           description Link to WAN
-           ip address 192.168.255.100 255.255.255.0
-          !
-          interface Ethernet0/1
-           description Link to R1
-           ip address 10.20.0.1 255.255.255.252
-           ip ospf 1 area 10
-          !
-          interface Ethernet0/2
-           description Link to R2
-           ip address 10.30.0.1 255.255.255.252
-           ip ospf 1 area 20
-          !
-          interface Ethernet0/3
-           description Link to R3
-           ip address 10.40.0.1 255.255.255.252
-           ip ospf 1 area 30
-          !
-          interface Ethernet1/0
-           description Link to DMZ hosts
-           ip address 10.99.0.100 255.255.255.0
-          !
-          interface Ethernet1/1
-           no ip address
-           shutdown
-          !
-          interface Ethernet1/2
-           no ip address
-           shutdown
-          !
-          interface Ethernet1/3
-           no ip address
-           shutdown
-          !
-          router ospf 1
-           router-id 1.1.1.1
-          !
-          ip forward-protocol nd
-          ip forward-protocol udp
-          !
-          !
-          ip http server
-          ip http secure-server
-          ip ssh bulk-mode 131072
-          no logging btrace
-          !
-          !
-          !
-          control-plane
-          !
-          !
-          !
-          line con 0
-           exec-timeout 0 0
-           logging synchronous
-          line aux 0
-          line vty 0 4
-           exec-timeout 0 0
-           login local
-           transport input ssh
-          !
-          !
-          !
-          !
-          end
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n1
-    image_definition: null
-    label: E1
-    node_definition: iol-xe
-    parameters: {}
-    ram: null
-    tags:
-      - edge-router
-    x: -120
-    y: 40
-    interfaces:
-      - id: i0
-        label: Loopback0
-        mac_address: null
-        type: loopback
-      - id: i1
-        label: Ethernet0/0
-        mac_address: null
-        type: physical
-        slot: 0
-      - id: i2
-        label: Ethernet0/1
-        mac_address: null
-        type: physical
-        slot: 1
-      - id: i3
-        label: Ethernet0/2
-        mac_address: null
-        type: physical
-        slot: 2
-      - id: i4
-        label: Ethernet0/3
-        mac_address: null
-        type: physical
-        slot: 3
-      - id: i5
-        label: Ethernet1/0
-        mac_address: null
-        type: physical
-        slot: 4
-      - id: i6
-        label: Ethernet1/1
-        mac_address: null
-        type: physical
-        slot: 5
-      - id: i7
-        label: Ethernet1/2
-        mac_address: null
-        type: physical
-        slot: 6
-      - id: i8
-        label: Ethernet1/3
-        mac_address: null
-        type: physical
-        slot: 7
-  - boot_disk_size: null
-    configuration:
-      - name: ios_config.txt
-        content: |-
-          Building configuration...
 
-          Current configuration : 1170 bytes
-          !
-          ! Last configuration change at 15:13:14 UTC Sat Feb 21 2026
-          !
-          version 17.16
-          service timestamps debug datetime msec
-          service timestamps log datetime msec
-          !
-          hostname R1
-          !
-          boot-start-marker
-          boot-end-marker
-          !
-          !
-          no logging console
-          no aaa new-model
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          ip domain name lab.local
-          ip cef
-          login on-success log
-          no ipv6 cef
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          memory free low-watermark processor 79983
-          !
-          !
-          spanning-tree mode rapid-pvst
-          !
-          enable password cisco
-          !
-          username cisco privilege 15 password 0 cisco
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          interface Ethernet0/0
-           description Link to E1
-           ip address 10.20.0.2 255.255.255.0
-           ip ospf 1 area 10
-          !
-          interface Ethernet0/1
-           no ip address
-           shutdown
-          !
-          interface Ethernet0/2
-           no ip address
-           shutdown
-          !
-          interface Ethernet0/3
-           no ip address
-           shutdown
-          !
-          router ospf 1
-           router-id 10.10.10.10
-          !
-          ip forward-protocol nd
-          ip forward-protocol udp
-          !
-          !
-          ip http server
-          ip http secure-server
-          ip route 0.0.0.0 0.0.0.0 10.20.0.1
-          ip ssh bulk-mode 131072
-          no logging btrace
-          !
-          !
-          !
-          control-plane
-          !
-          !
-          !
-          line con 0
-           exec-timeout 0 0
-           logging synchronous
-          line aux 0
-          line vty 0 4
-           exec-timeout 0 0
-           login local
-           transport input ssh
-          !
-          !
-          !
-          !
-          end
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n2
-    image_definition: null
-    label: R1
-    node_definition: iol-xe
-    parameters: {}
-    ram: null
-    tags:
-      - router
-    x: -360
-    y: 200
-    interfaces:
-      - id: i0
-        label: Loopback0
-        mac_address: null
-        type: loopback
-      - id: i1
-        label: Ethernet0/0
-        mac_address: null
-        type: physical
-        slot: 0
-      - id: i2
-        label: Ethernet0/1
-        mac_address: null
-        type: physical
-        slot: 1
-      - id: i3
-        label: Ethernet0/2
-        mac_address: null
-        type: physical
-        slot: 2
-      - id: i4
-        label: Ethernet0/3
-        mac_address: null
-        type: physical
-        slot: 3
-  - boot_disk_size: null
-    configuration:
-      - name: ios_config.txt
-        content: |-
-          Building configuration...
+      Current configuration : 3820 bytes
 
-          Current configuration : 1172 bytes
-          !
-          ! Last configuration change at 15:13:15 UTC Sat Feb 21 2026
-          !
-          version 17.16
-          service timestamps debug datetime msec
-          service timestamps log datetime msec
-          !
-          hostname R2
-          !
-          boot-start-marker
-          boot-end-marker
-          !
-          !
-          no logging console
-          no aaa new-model
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          ip domain name lab.local
-          ip cef
-          login on-success log
-          no ipv6 cef
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          memory free low-watermark processor 79983
-          !
-          !
-          spanning-tree mode rapid-pvst
-          !
-          enable password cisco
-          !
-          username cisco privilege 15 password 0 cisco
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          interface Ethernet0/0
-           description Link to R1
-           ip address 10.30.0.2 255.255.255.252
-           ip ospf 1 area 20
-          !
-          interface Ethernet0/1
-           no ip address
-           shutdown
-          !
-          interface Ethernet0/2
-           no ip address
-           shutdown
-          !
-          interface Ethernet0/3
-           no ip address
-           shutdown
-          !
-          router ospf 1
-           router-id 20.20.20.20
-          !
-          ip forward-protocol nd
-          ip forward-protocol udp
-          !
-          !
-          ip http server
-          ip http secure-server
-          ip route 0.0.0.0 0.0.0.0 10.30.0.1
-          ip ssh bulk-mode 131072
-          no logging btrace
-          !
-          !
-          !
-          control-plane
-          !
-          !
-          !
-          line con 0
-           exec-timeout 0 0
-           logging synchronous
-          line aux 0
-          line vty 0 4
-           exec-timeout 0 0
-           login local
-           transport input ssh
-          !
-          !
-          !
-          !
-          end
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n3
-    image_definition: null
-    label: R2
-    node_definition: iol-xe
-    parameters: {}
-    ram: null
-    tags:
-      - router
-    x: -120
-    y: 200
-    interfaces:
-      - id: i0
-        label: Loopback0
-        mac_address: null
-        type: loopback
-      - id: i1
-        label: Ethernet0/0
-        mac_address: null
-        type: physical
-        slot: 0
-      - id: i2
-        label: Ethernet0/1
-        mac_address: null
-        type: physical
-        slot: 1
-      - id: i3
-        label: Ethernet0/2
-        mac_address: null
-        type: physical
-        slot: 2
-      - id: i4
-        label: Ethernet0/3
-        mac_address: null
-        type: physical
-        slot: 3
-  - boot_disk_size: null
-    configuration:
-      - name: ios_config.txt
-        content: |-
-          Building configuration...
+      !
 
-          Current configuration : 1172 bytes
-          !
-          ! Last configuration change at 15:13:15 UTC Sat Feb 21 2026
-          !
-          version 17.16
-          service timestamps debug datetime msec
-          service timestamps log datetime msec
-          !
-          hostname R3
-          !
-          boot-start-marker
-          boot-end-marker
-          !
-          !
-          no logging console
-          no aaa new-model
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          ip domain name lab.local
-          ip cef
-          login on-success log
-          no ipv6 cef
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          memory free low-watermark processor 79983
-          !
-          !
-          spanning-tree mode rapid-pvst
-          !
-          enable password cisco
-          !
-          username cisco privilege 15 password 0 cisco
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          interface Ethernet0/0
-           description Link to R1
-           ip address 10.40.0.2 255.255.255.252
-           ip ospf 1 area 30
-          !
-          interface Ethernet0/1
-           no ip address
-           shutdown
-          !
-          interface Ethernet0/2
-           no ip address
-           shutdown
-          !
-          interface Ethernet0/3
-           no ip address
-           shutdown
-          !
-          router ospf 1
-           router-id 30.30.30.30
-          !
-          ip forward-protocol nd
-          ip forward-protocol udp
-          !
-          !
-          ip http server
-          ip http secure-server
-          ip route 0.0.0.0 0.0.0.0 10.40.0.1
-          ip ssh bulk-mode 131072
-          no logging btrace
-          !
-          !
-          !
-          control-plane
-          !
-          !
-          !
-          line con 0
-           exec-timeout 0 0
-           logging synchronous
-          line aux 0
-          line vty 0 4
-           exec-timeout 0 0
-           login local
-           transport input ssh
-          !
-          !
-          !
-          !
-          end
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n4
-    image_definition: null
-    label: R3
-    node_definition: iol-xe
-    parameters: {}
-    ram: null
-    tags:
-      - router
-    x: 120
-    y: 200
-    interfaces:
-      - id: i0
-        label: Loopback0
-        mac_address: null
-        type: loopback
-      - id: i1
-        label: Ethernet0/0
-        mac_address: null
-        type: physical
-        slot: 0
-      - id: i2
-        label: Ethernet0/1
-        mac_address: null
-        type: physical
-        slot: 1
-      - id: i3
-        label: Ethernet0/2
-        mac_address: null
-        type: physical
-        slot: 2
-      - id: i4
-        label: Ethernet0/3
-        mac_address: null
-        type: physical
-        slot: 3
-  - boot_disk_size: null
-    configuration:
-      - name: ios_config.txt
-        content: |-
-          Building configuration...
+      ! Last configuration change at 07:19:06 UTC Fri Mar 6 2026
 
-          Current configuration : 1446 bytes
-          !
-          ! Last configuration change at 15:13:15 UTC Sat Feb 21 2026
-          !
-          version 17.16
-          service timestamps debug datetime msec
-          service timestamps log datetime msec
-          service compress-config
-          !
-          hostname iol-l2-0
-          !
-          boot-start-marker
-          boot-end-marker
-          !
-          !
-          vrf definition Mgmt-intf
-           !
-           address-family ipv4
-           exit-address-family
-           !
-           address-family ipv6
-           exit-address-family
-          !
-          no logging console
-          no aaa new-model
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          ip audit notify log
-          ip audit po max-events 100
-          no ip domain lookup
-          ip cef
-          login on-success log
-          no ipv6 cef
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          vtp domain virl.lab
-          vtp mode transparent
-          !
-          !
-          !
-          !
-          memory free low-watermark processor 79497
-          !
-          !
-          spanning-tree mode pvst
-          spanning-tree extend system-id
-          enable password cisco
-          !
-          !
-          vlan internal allocation policy ascending
-          !
-          vlan 2
-           name ank_vlan2
-          no cdp run
-          !
-          !
-          !
-          !
-          !
-          interface Loopback0
-           description not connected
-           no ip address
-           shutdown
-          !
-          interface Ethernet0/0
-           description to Ethernet0/1.R1
-          !
-          interface Ethernet0/1
-           description not connected
-           shutdown
-          !
-          interface Ethernet0/2
-           description not connected
-           shutdown
-          !
-          interface Ethernet0/3
-           description not connected
-           shutdown
-          !
-          ip forward-protocol nd
-          ip forward-protocol udp
-          !
-          !
-          no ip http server
-          no ip http secure-server
-          ip ssh bulk-mode 131072
-          !
-          no logging btrace
-          !
-          !
-          !
-          control-plane
-          !
-          !
-          !
-          line con 0
-           exec-timeout 0 0
-           password cisco
-           logging synchronous
-          line aux 0
-          line vty 0 4
-           exec-timeout 0 0
-           password cisco
-           login
-           transport input telnet ssh
-          !
-          !
-          end
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n5
-    image_definition: null
-    label: iol-l2-0
-    node_definition: ioll2-xe
-    parameters: {}
-    ram: null
-    tags: []
-    x: -360
-    y: 360
-    interfaces:
-      - id: i0
-        label: Loopback0
-        mac_address: null
-        type: loopback
-      - id: i1
-        label: Ethernet0/0
-        mac_address: null
-        type: physical
-        slot: 0
-      - id: i2
-        label: Ethernet0/1
-        mac_address: null
-        type: physical
-        slot: 1
-      - id: i3
-        label: Ethernet0/2
-        mac_address: null
-        type: physical
-        slot: 2
-      - id: i4
-        label: Ethernet0/3
-        mac_address: null
-        type: physical
-        slot: 3
-  - boot_disk_size: null
-    configuration:
-      - name: ios_config.txt
-        content: |-
-          Building configuration...
+      !
 
-          Current configuration : 1446 bytes
-          !
-          ! Last configuration change at 15:13:15 UTC Sat Feb 21 2026
-          !
-          version 17.16
-          service timestamps debug datetime msec
-          service timestamps log datetime msec
-          service compress-config
-          !
-          hostname iol-l2-1
-          !
-          boot-start-marker
-          boot-end-marker
-          !
-          !
-          vrf definition Mgmt-intf
-           !
-           address-family ipv4
-           exit-address-family
-           !
-           address-family ipv6
-           exit-address-family
-          !
-          no logging console
-          no aaa new-model
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          ip audit notify log
-          ip audit po max-events 100
-          no ip domain lookup
-          ip cef
-          login on-success log
-          no ipv6 cef
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          vtp domain virl.lab
-          vtp mode transparent
-          !
-          !
-          !
-          !
-          memory free low-watermark processor 79497
-          !
-          !
-          spanning-tree mode pvst
-          spanning-tree extend system-id
-          enable password cisco
-          !
-          !
-          vlan internal allocation policy ascending
-          !
-          vlan 2
-           name ank_vlan2
-          no cdp run
-          !
-          !
-          !
-          !
-          !
-          interface Loopback0
-           description not connected
-           no ip address
-           shutdown
-          !
-          interface Ethernet0/0
-           description to Ethernet0/1.R2
-          !
-          interface Ethernet0/1
-           description not connected
-           shutdown
-          !
-          interface Ethernet0/2
-           description not connected
-           shutdown
-          !
-          interface Ethernet0/3
-           description not connected
-           shutdown
-          !
-          ip forward-protocol nd
-          ip forward-protocol udp
-          !
-          !
-          no ip http server
-          no ip http secure-server
-          ip ssh bulk-mode 131072
-          !
-          no logging btrace
-          !
-          !
-          !
-          control-plane
-          !
-          !
-          !
-          line con 0
-           exec-timeout 0 0
-           password cisco
-           logging synchronous
-          line aux 0
-          line vty 0 4
-           exec-timeout 0 0
-           password cisco
-           login
-           transport input telnet ssh
-          !
-          !
-          end
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n6
-    image_definition: null
-    label: iol-l2-1
-    node_definition: ioll2-xe
-    parameters: {}
-    ram: null
-    tags: []
-    x: -240
-    y: 360
-    interfaces:
-      - id: i0
-        label: Loopback0
-        mac_address: null
-        type: loopback
-      - id: i1
-        label: Ethernet0/0
-        mac_address: null
-        type: physical
-        slot: 0
-      - id: i2
-        label: Ethernet0/1
-        mac_address: null
-        type: physical
-        slot: 1
-      - id: i3
-        label: Ethernet0/2
-        mac_address: null
-        type: physical
-        slot: 2
-      - id: i4
-        label: Ethernet0/3
-        mac_address: null
-        type: physical
-        slot: 3
-  - boot_disk_size: null
-    configuration:
-      - name: ios_config.txt
-        content: |-
-          Building configuration...
+      version 17.16
 
-          Current configuration : 1446 bytes
-          !
-          ! Last configuration change at 15:13:17 UTC Sat Feb 21 2026
-          !
-          version 17.16
-          service timestamps debug datetime msec
-          service timestamps log datetime msec
-          service compress-config
-          !
-          hostname iol-l2-2
-          !
-          boot-start-marker
-          boot-end-marker
-          !
-          !
-          vrf definition Mgmt-intf
-           !
-           address-family ipv4
-           exit-address-family
-           !
-           address-family ipv6
-           exit-address-family
-          !
-          no logging console
-          no aaa new-model
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          ip audit notify log
-          ip audit po max-events 100
-          no ip domain lookup
-          ip cef
-          login on-success log
-          no ipv6 cef
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          vtp domain virl.lab
-          vtp mode transparent
-          !
-          !
-          !
-          !
-          memory free low-watermark processor 79497
-          !
-          !
-          spanning-tree mode pvst
-          spanning-tree extend system-id
-          enable password cisco
-          !
-          !
-          vlan internal allocation policy ascending
-          !
-          vlan 2
-           name ank_vlan2
-          no cdp run
-          !
-          !
-          !
-          !
-          !
-          interface Loopback0
-           description not connected
-           no ip address
-           shutdown
-          !
-          interface Ethernet0/0
-           description to Ethernet0/1.R3
-          !
-          interface Ethernet0/1
-           description not connected
-           shutdown
-          !
-          interface Ethernet0/2
-           description not connected
-           shutdown
-          !
-          interface Ethernet0/3
-           description not connected
-           shutdown
-          !
-          ip forward-protocol nd
-          ip forward-protocol udp
-          !
-          !
-          no ip http server
-          no ip http secure-server
-          ip ssh bulk-mode 131072
-          !
-          no logging btrace
-          !
-          !
-          !
-          control-plane
-          !
-          !
-          !
-          line con 0
-           exec-timeout 0 0
-           password cisco
-           logging synchronous
-          line aux 0
-          line vty 0 4
-           exec-timeout 0 0
-           password cisco
-           login
-           transport input telnet ssh
-          !
-          !
-          end
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n7
-    image_definition: null
-    label: iol-l2-2
-    node_definition: ioll2-xe
-    parameters: {}
-    ram: null
-    tags: []
-    x: 120
-    y: 360
-    interfaces:
-      - id: i0
-        label: Loopback0
-        mac_address: null
-        type: loopback
-      - id: i1
-        label: Ethernet0/0
-        mac_address: null
-        type: physical
-        slot: 0
-      - id: i2
-        label: Ethernet0/1
-        mac_address: null
-        type: physical
-        slot: 1
-      - id: i3
-        label: Ethernet0/2
-        mac_address: null
-        type: physical
-        slot: 2
-      - id: i4
-        label: Ethernet0/3
-        mac_address: null
-        type: physical
-        slot: 3
-  - boot_disk_size: null
-    configuration:
-      - name: ios_config.txt
-        content: |-
-          Building configuration...
+      service timestamps debug datetime msec
 
-          Current configuration : 1446 bytes
-          !
-          ! Last configuration change at 15:13:15 UTC Sat Feb 21 2026
-          !
-          version 17.16
-          service timestamps debug datetime msec
-          service timestamps log datetime msec
-          service compress-config
-          !
-          hostname iol-l2-3
-          !
-          boot-start-marker
-          boot-end-marker
-          !
-          !
-          vrf definition Mgmt-intf
-           !
-           address-family ipv4
-           exit-address-family
-           !
-           address-family ipv6
-           exit-address-family
-          !
-          no logging console
-          no aaa new-model
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          ip audit notify log
-          ip audit po max-events 100
-          no ip domain lookup
-          ip cef
-          login on-success log
-          no ipv6 cef
-          !
-          !
-          !
-          !
-          !
-          !
-          !
-          vtp domain virl.lab
-          vtp mode transparent
-          !
-          !
-          !
-          !
-          memory free low-watermark processor 79497
-          !
-          !
-          spanning-tree mode pvst
-          spanning-tree extend system-id
-          enable password cisco
-          !
-          !
-          vlan internal allocation policy ascending
-          !
-          vlan 2
-           name ank_vlan2
-          no cdp run
-          !
-          !
-          !
-          !
-          !
-          interface Loopback0
-           description not connected
-           no ip address
-           shutdown
-          !
-          interface Ethernet0/0
-           description to Ethernet0/2.R2
-          !
-          interface Ethernet0/1
-           description not connected
-           shutdown
-          !
-          interface Ethernet0/2
-           description not connected
-           shutdown
-          !
-          interface Ethernet0/3
-           description not connected
-           shutdown
-          !
-          ip forward-protocol nd
-          ip forward-protocol udp
-          !
-          !
-          no ip http server
-          no ip http secure-server
-          ip ssh bulk-mode 131072
-          !
-          no logging btrace
-          !
-          !
-          !
-          control-plane
-          !
-          !
-          !
-          line con 0
-           exec-timeout 0 0
-           password cisco
-           logging synchronous
-          line aux 0
-          line vty 0 4
-           exec-timeout 0 0
-           password cisco
-           login
-           transport input telnet ssh
-          !
-          !
-          end
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n8
-    image_definition: null
-    label: iol-l2-3
-    node_definition: ioll2-xe
-    parameters: {}
-    ram: null
-    tags: []
-    x: -40
-    y: 360
-    interfaces:
-      - id: i0
-        label: Loopback0
-        mac_address: null
-        type: loopback
-      - id: i1
-        label: Ethernet0/0
-        mac_address: null
-        type: physical
-        slot: 0
-      - id: i2
-        label: Ethernet0/1
-        mac_address: null
-        type: physical
-        slot: 1
-      - id: i3
-        label: Ethernet0/2
-        mac_address: null
-        type: physical
-        slot: 2
-      - id: i4
-        label: Ethernet0/3
-        mac_address: null
-        type: physical
-        slot: 3
-  - boot_disk_size: null
-    configuration:
-      - name: network-config
-        content: |-
-          network:
-            version: 2
-            ethernets:
-              ens2:
-                dhcp4: true
-              ens3:
-                dhcp4: false
-                addresses:
-                  - 10.99.0.1/24
-                routes:
-                  - to: 10.20.0.0/24
-                    via: 10.99.0.100
-                  - to: 10.30.0.0/24
-                    via: 10.99.0.100
-                  - to: 10.40.0.0/24
-                    via: 10.99.0.100
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n9
-    image_definition: null
-    label: ubuntu-0
-    node_definition: ubuntu
-    parameters: {}
-    ram: null
-    tags: []
-    x: 240
-    y: 40
-    interfaces:
-      - id: i0
-        label: ens2
-        mac_address: null
-        type: physical
-        slot: 0
-      - id: i1
-        label: ens3
-        mac_address: null
-        type: physical
-        slot: 1
-      - id: i2
-        label: ens4
-        mac_address: null
-        type: physical
-        slot: 2
-  - boot_disk_size: null
-    configuration: []
-    cpu_limit: null
-    cpus: null
-    data_volume: null
-    hide_links: false
-    id: n10
-    image_definition: null
-    label: ext-conn-1
-    node_definition: external_connector
-    parameters: {}
-    ram: null
-    tags: []
-    x: 240
-    y: -80
-    interfaces:
-      - id: i0
-        label: port
-        mac_address: null
-        type: physical
-        slot: 0
+      service timestamps log datetime msec
+
+      !
+
+      hostname E1
+
+      !
+
+      boot-start-marker
+
+      boot-end-marker
+
+      !
+
+      !
+
+      no logging console
+
+      no aaa new-model
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      ip domain name lab.local
+
+      ip cef
+
+      login on-success log
+
+      no ipv6 cef
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      crypto pki trustpoint TP-self-signed-131184658
+
+      \ enrollment selfsigned
+
+      \ subject-name cn=IOS-Self-Signed-Certificate-131184658
+
+      \ revocation-check none
+
+      \ rsakeypair TP-self-signed-131184658
+
+      \ hash sha512
+
+      !
+
+      !
+
+      crypto pki certificate chain TP-self-signed-131184658
+
+      \ certificate self-signed 01
+
+      \  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 0D050030
+
+      \  30312E30 2C060355 04030C25 494F532D 53656C66 2D536967 6E65642D 43657274
+
+      \  69666963 6174652D 31333131 38343635 38301E17 0D323630 33303630 37313833
+
+      \  365A170D 33363033 30353037 31383336 5A303031 2E302C06 03550403 0C25494F
+
+      \  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3133 31313834
+
+      \  36353830 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02
+
+      \  82010100 CA99C384 4C7DFF10 989C94A2 638FE953 A6057CAB 8EC52B38 43C3FBC3
+
+      \  5A388718 10D7D0E9 42E505CD 53420B1D 22AC678E C3909A3F 239B30AF 06C0A84C
+
+      \  4591F1FA 8D5C7A5A E46EB1B4 C2B97A75 A75C1C71 141CB486 8616CCC8 F3D03902
+
+      \  212FF159 33831AB4 B697C70F 0F886AE6 6668A1F4 23561960 239220A5 130473BB
+
+      \  D2B3AB72 A802A258 1B4289A5 353A9AAC EBA57F24 8D8DC032 2A7F8502 65FB9512
+
+      \  F122CC9D 2B956758 80D571FD 9339D1D7 380B6ADA 29808E62 F3411BED ACC5A6FD
+
+      \  807B2004 1A6EBC45 256FED8E 8B9DA797 5F3FDCEE BF893E6F BD9DC634 87770166
+
+      \  7FC8D401 7A3FE4F7 1A1CDEB6 A51001E1 0A90B354 B2A39C42 0E3C5F51 6F20E113
+
+      \  22277221 02030100 01A35330 51301D06 03551D0E 04160414 6DED0BB8 B11D1DFF
+
+      \  3160288E 8761C719 A0D88170 301F0603 551D2304 18301680 146DED0B B8B11D1D
+
+      \  FF316028 8E8761C7 19A0D881 70300F06 03551D13 0101FF04 05300301 01FF300D
+
+      \  06092A86 4886F70D 01010D05 00038201 010000A5 AEA1984B 3539949C 0D7F9A0B
+
+      \  C365A2E6 141316CC 64796F4A 07262BC7 FF630A98 47B6458E F55DA4CB BDADB9E8
+
+      \  F5F13778 E1CCEF8A FC9A63B2 36010A1E 311B6993 AA8ED2B0 169A0951 FB017827
+
+      \  B1C80731 81CCD584 EEF80A91 C57CCFE3 A55E3E01 E020F722 F2258732 0D951013
+
+      \  6D734C81 5506B1B8 D5E67630 B30878FF C77A07E1 91D009D3 F074733E 8C2B7554
+
+      \  E051AE30 8CFD1E06 712780BA 63890CDA 726B2A04 55328B6D 36F3F3FE B739A05B
+
+      \  BAEDF6AA 73AF8A0B E704A696 44767B0D C0CE5903 583AE3D6 C1E8C351 BDE8CA37
+
+      \  CEC4DE0B 306A3D03 E4851F78 DE18C660 5F35CA11 FE6FDCFF 79894AC3 137663C6
+
+      \  0F5CA159 67FB1309 F92044BA C035C680 FFBD
+
+      \  \tquit
+
+      !
+
+      !
+
+      memory free low-watermark processor 79983
+
+      !
+
+      !
+
+      spanning-tree mode rapid-pvst
+
+      !
+
+      !
+
+      username cisco privilege 15 password 0 cisco
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      !
+
+      interface Loopback0
+
+      \ description Loopback interface
+
+      \ ip address 1.1.1.1 255.255.255.255
+
+      \ ip ospf 1 area 0
+
+      !
+
+      interface Ethernet0/0
+
+      \ description Link to WAN
+
+      \ ip address 192.168.255.100 255.255.255.0
+
+      !
+
+      interface Ethernet0/1
+
+      \ description Link to R1
+
+      \ ip address 10.20.0.1 255.255.255.252
+
+      \ ip ospf 1 area 10
+
+      !
+
+      interface Ethernet0/2
+
+      \ description Link to R2
+
+      \ ip address 10.30.0.1 255.255.255.252
+
+      \ ip ospf 1 area 20
+
+      !
+
+      interface Ethernet0/3
+
+      \ description Link to R3
+
+      \ ip address 10.40.0.1 255.255.255.252
+
+      \ ip ospf 1 area 30
+
+      !
+
+      interface Ethernet1/0
+
+      \ description Link to DMZ hosts
+
+      \ ip address 10.99.0.100 255.255.255.0
+
+      !
+
+      interface Ethernet1/1
+
+      \ no ip address
+
+      \ shutdown
+
+      !
+
+      interface Ethernet1/2
+
+      \ no ip address
+
+      \ shutdown
+
+      !
+
+      interface Ethernet1/3
+
+      \ no ip address
+
+      \ shutdown
+
+      !
+
+      router ospf 1
+
+      \ router-id 1.1.1.1
+
+      !
+
+      ip forward-protocol nd
+
+      ip forward-protocol udp
+
+      !
+
+      !
+
+      ip http server
+
+      ip http secure-server
+
+      ip ssh bulk-mode 131072
+
+      no logging btrace
+
+      !
+
+      !
+
+      !
+
+      control-plane
+
+      !
+
+      !
+
+      !
+
+      line con 0
+
+      \ exec-timeout 0 0
+
+      \ logging synchronous
+
+      line aux 0
+
+      line vty 0 4
+
+      \ exec-timeout 0 0
+
+      \ login local
+
+      \ transport input ssh
+
+      !
+
+      !
+
+      !
+
+      !
+
+      end"
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n1
+  image_definition: null
+  label: E1
+  node_definition: iol-xe
+  parameters: {}
+  ram: null
+  tags:
+  - edge-router
+  x: -120
+  y: 40
+  interfaces:
+  - id: i0
+    label: Loopback0
+    mac_address: null
+    type: loopback
+  - id: i1
+    label: Ethernet0/0
+    mac_address: null
+    type: physical
+    slot: 0
+  - id: i2
+    label: Ethernet0/1
+    mac_address: null
+    type: physical
+    slot: 1
+  - id: i3
+    label: Ethernet0/2
+    mac_address: null
+    type: physical
+    slot: 2
+  - id: i4
+    label: Ethernet0/3
+    mac_address: null
+    type: physical
+    slot: 3
+  - id: i5
+    label: Ethernet1/0
+    mac_address: null
+    type: physical
+    slot: 4
+  - id: i6
+    label: Ethernet1/1
+    mac_address: null
+    type: physical
+    slot: 5
+  - id: i7
+    label: Ethernet1/2
+    mac_address: null
+    type: physical
+    slot: 6
+  - id: i8
+    label: Ethernet1/3
+    mac_address: null
+    type: physical
+    slot: 7
+- boot_disk_size: null
+  configuration:
+  - name: ios_config.txt
+    content: |-
+      Building configuration...
+
+      Current configuration : 1170 bytes
+      !
+      ! Last configuration change at 15:13:14 UTC Sat Feb 21 2026
+      !
+      version 17.16
+      service timestamps debug datetime msec
+      service timestamps log datetime msec
+      !
+      hostname R1
+      !
+      boot-start-marker
+      boot-end-marker
+      !
+      !
+      no logging console
+      no aaa new-model
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      ip domain name lab.local
+      ip cef
+      login on-success log
+      no ipv6 cef
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      memory free low-watermark processor 79983
+      !
+      !
+      spanning-tree mode rapid-pvst
+      !
+      username cisco privilege 15 password 0 cisco
+      crypto key generate rsa modulus 2048
+      ip ssh version 2
+      !
+      interface Ethernet0/0
+       description Link to E1
+       ip address 10.20.0.2 255.255.255.252
+       ip ospf 1 area 10
+       no shutdown
+      !
+      interface Ethernet0/1
+       no ip address
+       shutdown
+      !
+      interface Ethernet0/2
+       no ip address
+       shutdown
+      !
+      interface Ethernet0/3
+       no ip address
+       shutdown
+      !
+      router ospf 1
+       router-id 10.10.10.10
+      !
+      ip route 0.0.0.0 0.0.0.0 10.20.0.1
+      !
+      line con 0
+       exec-timeout 0 0
+       logging synchronous
+      line vty 0 4
+       exec-timeout 0 0
+       login local
+       transport input ssh
+      !
+      !
+      !
+      !
+      end
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n2
+  image_definition: null
+  label: R1
+  node_definition: iol-xe
+  parameters: {}
+  ram: null
+  tags:
+  - router
+  x: -360
+  y: 200
+  interfaces:
+  - id: i0
+    label: Loopback0
+    mac_address: null
+    type: loopback
+  - id: i1
+    label: Ethernet0/0
+    mac_address: null
+    type: physical
+    slot: 0
+  - id: i2
+    label: Ethernet0/1
+    mac_address: null
+    type: physical
+    slot: 1
+  - id: i3
+    label: Ethernet0/2
+    mac_address: null
+    type: physical
+    slot: 2
+  - id: i4
+    label: Ethernet0/3
+    mac_address: null
+    type: physical
+    slot: 3
+- boot_disk_size: null
+  configuration:
+  - name: ios_config.txt
+    content: |-
+      Building configuration...
+
+      Current configuration : 1150 bytes
+      !
+      ! Last configuration change at 08:53:25 UTC Sun Feb 22 2026
+      !
+      version 17.16
+      service timestamps debug datetime msec
+      service timestamps log datetime msec
+      !
+      hostname R2
+      !
+      boot-start-marker
+      boot-end-marker
+      !
+      !
+      no logging console
+      no aaa new-model
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      ip domain name lab.local
+      ip cef
+      login on-success log
+      no ipv6 cef
+      !
+      !
+      crypto key generate rsa modulus 2048
+      ip ssh version 2
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      memory free low-watermark processor 79983
+      !
+      !
+      spanning-tree mode rapid-pvst
+      !
+      !
+      username cisco privilege 15 password 0 cisco
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      interface Ethernet0/0
+       description Link to E1
+       ip address 10.30.0.2 255.255.255.252
+       ip ospf 1 area 20
+       no shutdown
+      !
+      interface Ethernet0/1
+       no ip address
+       shutdown
+      !
+      interface Ethernet0/2
+       no ip address
+       shutdown
+      !
+      interface Ethernet0/3
+       no ip address
+       shutdown
+      !
+      router ospf 1
+       router-id 20.20.20.20
+      !
+      ip forward-protocol nd
+      ip forward-protocol udp
+      !
+      !
+      ip http server
+      ip http secure-server
+      ip route 0.0.0.0 0.0.0.0 10.30.0.1
+      ip ssh bulk-mode 131072
+      no logging btrace
+      !
+      !
+      !
+      control-plane
+      !
+      !
+      !
+      line con 0
+       exec-timeout 0 0
+       logging synchronous
+      line aux 0
+      line vty 0 4
+       exec-timeout 0 0
+       login local
+       transport input ssh
+      !
+      !
+      !
+      !
+      end
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n3
+  image_definition: null
+  label: R2
+  node_definition: iol-xe
+  parameters: {}
+  ram: null
+  tags:
+  - router
+  x: -120
+  y: 200
+  interfaces:
+  - id: i0
+    label: Loopback0
+    mac_address: null
+    type: loopback
+  - id: i1
+    label: Ethernet0/0
+    mac_address: null
+    type: physical
+    slot: 0
+  - id: i2
+    label: Ethernet0/1
+    mac_address: null
+    type: physical
+    slot: 1
+  - id: i3
+    label: Ethernet0/2
+    mac_address: null
+    type: physical
+    slot: 2
+  - id: i4
+    label: Ethernet0/3
+    mac_address: null
+    type: physical
+    slot: 3
+- boot_disk_size: null
+  configuration:
+  - name: ios_config.txt
+    content: |-
+      Building configuration...
+
+      Current configuration : 1150 bytes
+      !
+      ! Last configuration change at 08:53:51 UTC Sun Feb 22 2026
+      !
+      version 17.16
+      service timestamps debug datetime msec
+      service timestamps log datetime msec
+      !
+      hostname R3
+      !
+      boot-start-marker
+      boot-end-marker
+      !
+      !
+      no logging console
+      no aaa new-model
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      ip domain name lab.local
+      ip cef
+      login on-success log
+      no ipv6 cef
+      !
+      crypto key generate rsa modulus 2048
+      ip ssh version 2
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      memory free low-watermark processor 79983
+      !
+      !
+      spanning-tree mode rapid-pvst
+      !
+      !
+      username cisco privilege 15 password 0 cisco
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      interface Ethernet0/0
+       description Link to R1
+       ip address 10.40.0.2 255.255.255.252
+       ip ospf 1 area 30
+       no shutdown
+      !
+      interface Ethernet0/1
+       no ip address
+       shutdown
+      !
+      interface Ethernet0/2
+       no ip address
+       shutdown
+      !
+      interface Ethernet0/3
+       no ip address
+       shutdown
+      !
+      router ospf 1
+       router-id 30.30.30.30
+      !
+      ip forward-protocol nd
+      ip forward-protocol udp
+      !
+      !
+      ip http server
+      ip http secure-server
+      ip route 0.0.0.0 0.0.0.0 10.40.0.1
+      ip ssh bulk-mode 131072
+      no logging btrace
+      !
+      !
+      !
+      control-plane
+      !
+      !
+      !
+      line con 0
+       exec-timeout 0 0
+       logging synchronous
+      line aux 0
+      line vty 0 4
+       exec-timeout 0 0
+       login local
+       transport input ssh
+      !
+      !
+      !
+      !
+      end
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n4
+  image_definition: null
+  label: R3
+  node_definition: iol-xe
+  parameters: {}
+  ram: null
+  tags:
+  - router
+  x: 120
+  y: 200
+  interfaces:
+  - id: i0
+    label: Loopback0
+    mac_address: null
+    type: loopback
+  - id: i1
+    label: Ethernet0/0
+    mac_address: null
+    type: physical
+    slot: 0
+  - id: i2
+    label: Ethernet0/1
+    mac_address: null
+    type: physical
+    slot: 1
+  - id: i3
+    label: Ethernet0/2
+    mac_address: null
+    type: physical
+    slot: 2
+  - id: i4
+    label: Ethernet0/3
+    mac_address: null
+    type: physical
+    slot: 3
+- boot_disk_size: null
+  configuration:
+  - name: ios_config.txt
+    content: |-
+      Building configuration...
+
+      Current configuration : 1446 bytes
+      !
+      ! Last configuration change at 15:13:15 UTC Sat Feb 21 2026
+      !
+      version 17.16
+      service timestamps debug datetime msec
+      service timestamps log datetime msec
+      service compress-config
+      !
+      hostname iol-l2-0
+      !
+      boot-start-marker
+      boot-end-marker
+      !
+      !
+      vrf definition Mgmt-intf
+       !
+       address-family ipv4
+       exit-address-family
+       !
+       address-family ipv6
+       exit-address-family
+      !
+      no logging console
+      no aaa new-model
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      ip audit notify log
+      ip audit po max-events 100
+      no ip domain lookup
+      ip cef
+      login on-success log
+      no ipv6 cef
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      vtp domain virl.lab
+      vtp mode transparent
+      !
+      !
+      !
+      !
+      memory free low-watermark processor 79497
+      !
+      !
+      spanning-tree mode pvst
+      spanning-tree extend system-id
+      enable password cisco
+      !
+      !
+      vlan internal allocation policy ascending
+      !
+      vlan 2
+       name ank_vlan2
+      no cdp run
+      !
+      !
+      !
+      !
+      !
+      interface Loopback0
+       description not connected
+       no ip address
+       shutdown
+      !
+      interface Ethernet0/0
+       description to Ethernet0/1.R1
+      !
+      interface Ethernet0/1
+       description not connected
+       shutdown
+      !
+      interface Ethernet0/2
+       description not connected
+       shutdown
+      !
+      interface Ethernet0/3
+       description not connected
+       shutdown
+      !
+      ip forward-protocol nd
+      ip forward-protocol udp
+      !
+      !
+      no ip http server
+      no ip http secure-server
+      ip ssh bulk-mode 131072
+      !
+      no logging btrace
+      !
+      !
+      !
+      control-plane
+      !
+      !
+      !
+      line con 0
+       exec-timeout 0 0
+       password cisco
+       logging synchronous
+      line aux 0
+      line vty 0 4
+       exec-timeout 0 0
+       password cisco
+       login
+       transport input telnet ssh
+      !
+      !
+      end
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n5
+  image_definition: null
+  label: iol-l2-0
+  node_definition: ioll2-xe
+  parameters: {}
+  ram: null
+  tags: []
+  x: -360
+  y: 360
+  interfaces:
+  - id: i0
+    label: Loopback0
+    mac_address: null
+    type: loopback
+  - id: i1
+    label: Ethernet0/0
+    mac_address: null
+    type: physical
+    slot: 0
+  - id: i2
+    label: Ethernet0/1
+    mac_address: null
+    type: physical
+    slot: 1
+  - id: i3
+    label: Ethernet0/2
+    mac_address: null
+    type: physical
+    slot: 2
+  - id: i4
+    label: Ethernet0/3
+    mac_address: null
+    type: physical
+    slot: 3
+- boot_disk_size: null
+  configuration:
+  - name: ios_config.txt
+    content: |-
+      Building configuration...
+
+      Current configuration : 1446 bytes
+      !
+      ! Last configuration change at 15:13:15 UTC Sat Feb 21 2026
+      !
+      version 17.16
+      service timestamps debug datetime msec
+      service timestamps log datetime msec
+      service compress-config
+      !
+      hostname iol-l2-1
+      !
+      boot-start-marker
+      boot-end-marker
+      !
+      !
+      vrf definition Mgmt-intf
+       !
+       address-family ipv4
+       exit-address-family
+       !
+       address-family ipv6
+       exit-address-family
+      !
+      no logging console
+      no aaa new-model
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      ip audit notify log
+      ip audit po max-events 100
+      no ip domain lookup
+      ip cef
+      login on-success log
+      no ipv6 cef
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      vtp domain virl.lab
+      vtp mode transparent
+      !
+      !
+      !
+      !
+      memory free low-watermark processor 79497
+      !
+      !
+      spanning-tree mode pvst
+      spanning-tree extend system-id
+      enable password cisco
+      !
+      !
+      vlan internal allocation policy ascending
+      !
+      vlan 2
+       name ank_vlan2
+      no cdp run
+      !
+      !
+      !
+      !
+      !
+      interface Loopback0
+       description not connected
+       no ip address
+       shutdown
+      !
+      interface Ethernet0/0
+       description to Ethernet0/1.R2
+      !
+      interface Ethernet0/1
+       description not connected
+       shutdown
+      !
+      interface Ethernet0/2
+       description not connected
+       shutdown
+      !
+      interface Ethernet0/3
+       description not connected
+       shutdown
+      !
+      ip forward-protocol nd
+      ip forward-protocol udp
+      !
+      !
+      no ip http server
+      no ip http secure-server
+      ip ssh bulk-mode 131072
+      !
+      no logging btrace
+      !
+      !
+      !
+      control-plane
+      !
+      !
+      !
+      line con 0
+       exec-timeout 0 0
+       password cisco
+       logging synchronous
+      line aux 0
+      line vty 0 4
+       exec-timeout 0 0
+       password cisco
+       login
+       transport input telnet ssh
+      !
+      !
+      end
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n6
+  image_definition: null
+  label: iol-l2-1
+  node_definition: ioll2-xe
+  parameters: {}
+  ram: null
+  tags: []
+  x: -200
+  y: 360
+  interfaces:
+  - id: i0
+    label: Loopback0
+    mac_address: null
+    type: loopback
+  - id: i1
+    label: Ethernet0/0
+    mac_address: null
+    type: physical
+    slot: 0
+  - id: i2
+    label: Ethernet0/1
+    mac_address: null
+    type: physical
+    slot: 1
+  - id: i3
+    label: Ethernet0/2
+    mac_address: null
+    type: physical
+    slot: 2
+  - id: i4
+    label: Ethernet0/3
+    mac_address: null
+    type: physical
+    slot: 3
+- boot_disk_size: null
+  configuration:
+  - name: ios_config.txt
+    content: |-
+      Building configuration...
+
+      Current configuration : 1446 bytes
+      !
+      ! Last configuration change at 15:13:17 UTC Sat Feb 21 2026
+      !
+      version 17.16
+      service timestamps debug datetime msec
+      service timestamps log datetime msec
+      service compress-config
+      !
+      hostname iol-l2-2
+      !
+      boot-start-marker
+      boot-end-marker
+      !
+      !
+      vrf definition Mgmt-intf
+       !
+       address-family ipv4
+       exit-address-family
+       !
+       address-family ipv6
+       exit-address-family
+      !
+      no logging console
+      no aaa new-model
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      ip audit notify log
+      ip audit po max-events 100
+      no ip domain lookup
+      ip cef
+      login on-success log
+      no ipv6 cef
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      vtp domain virl.lab
+      vtp mode transparent
+      !
+      !
+      !
+      !
+      memory free low-watermark processor 79497
+      !
+      !
+      spanning-tree mode pvst
+      spanning-tree extend system-id
+      enable password cisco
+      !
+      !
+      vlan internal allocation policy ascending
+      !
+      vlan 2
+       name ank_vlan2
+      no cdp run
+      !
+      !
+      !
+      !
+      !
+      interface Loopback0
+       description not connected
+       no ip address
+       shutdown
+      !
+      interface Ethernet0/0
+       description to Ethernet0/1.R3
+      !
+      interface Ethernet0/1
+       description not connected
+       shutdown
+      !
+      interface Ethernet0/2
+       description not connected
+       shutdown
+      !
+      interface Ethernet0/3
+       description not connected
+       shutdown
+      !
+      ip forward-protocol nd
+      ip forward-protocol udp
+      !
+      !
+      no ip http server
+      no ip http secure-server
+      ip ssh bulk-mode 131072
+      !
+      no logging btrace
+      !
+      !
+      !
+      control-plane
+      !
+      !
+      !
+      line con 0
+       exec-timeout 0 0
+       password cisco
+       logging synchronous
+      line aux 0
+      line vty 0 4
+       exec-timeout 0 0
+       password cisco
+       login
+       transport input telnet ssh
+      !
+      !
+      end
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n7
+  image_definition: null
+  label: iol-l2-2
+  node_definition: ioll2-xe
+  parameters: {}
+  ram: null
+  tags: []
+  x: 120
+  y: 360
+  interfaces:
+  - id: i0
+    label: Loopback0
+    mac_address: null
+    type: loopback
+  - id: i1
+    label: Ethernet0/0
+    mac_address: null
+    type: physical
+    slot: 0
+  - id: i2
+    label: Ethernet0/1
+    mac_address: null
+    type: physical
+    slot: 1
+  - id: i3
+    label: Ethernet0/2
+    mac_address: null
+    type: physical
+    slot: 2
+  - id: i4
+    label: Ethernet0/3
+    mac_address: null
+    type: physical
+    slot: 3
+- boot_disk_size: null
+  configuration:
+  - name: ios_config.txt
+    content: |-
+      Building configuration...
+
+      Current configuration : 1446 bytes
+      !
+      ! Last configuration change at 15:13:15 UTC Sat Feb 21 2026
+      !
+      version 17.16
+      service timestamps debug datetime msec
+      service timestamps log datetime msec
+      service compress-config
+      !
+      hostname iol-l2-3
+      !
+      boot-start-marker
+      boot-end-marker
+      !
+      !
+      vrf definition Mgmt-intf
+       !
+       address-family ipv4
+       exit-address-family
+       !
+       address-family ipv6
+       exit-address-family
+      !
+      no logging console
+      no aaa new-model
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      ip audit notify log
+      ip audit po max-events 100
+      no ip domain lookup
+      ip cef
+      login on-success log
+      no ipv6 cef
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      vtp domain virl.lab
+      vtp mode transparent
+      !
+      !
+      !
+      !
+      memory free low-watermark processor 79497
+      !
+      !
+      spanning-tree mode pvst
+      spanning-tree extend system-id
+      enable password cisco
+      !
+      !
+      vlan internal allocation policy ascending
+      !
+      vlan 2
+       name ank_vlan2
+      no cdp run
+      !
+      !
+      !
+      !
+      !
+      interface Loopback0
+       description not connected
+       no ip address
+       shutdown
+      !
+      interface Ethernet0/0
+       description to Ethernet0/2.R2
+      !
+      interface Ethernet0/1
+       description not connected
+       shutdown
+      !
+      interface Ethernet0/2
+       description not connected
+       shutdown
+      !
+      interface Ethernet0/3
+       description not connected
+       shutdown
+      !
+      ip forward-protocol nd
+      ip forward-protocol udp
+      !
+      !
+      no ip http server
+      no ip http secure-server
+      ip ssh bulk-mode 131072
+      !
+      no logging btrace
+      !
+      !
+      !
+      control-plane
+      !
+      !
+      !
+      line con 0
+       exec-timeout 0 0
+       password cisco
+       logging synchronous
+      line aux 0
+      line vty 0 4
+       exec-timeout 0 0
+       password cisco
+       login
+       transport input telnet ssh
+      !
+      !
+      end
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n8
+  image_definition: null
+  label: iol-l2-3
+  node_definition: ioll2-xe
+  parameters: {}
+  ram: null
+  tags: []
+  x: -40
+  y: 360
+  interfaces:
+  - id: i0
+    label: Loopback0
+    mac_address: null
+    type: loopback
+  - id: i1
+    label: Ethernet0/0
+    mac_address: null
+    type: physical
+    slot: 0
+  - id: i2
+    label: Ethernet0/1
+    mac_address: null
+    type: physical
+    slot: 1
+  - id: i3
+    label: Ethernet0/2
+    mac_address: null
+    type: physical
+    slot: 2
+  - id: i4
+    label: Ethernet0/3
+    mac_address: null
+    type: physical
+    slot: 3
+- boot_disk_size: null
+  configuration:
+  - name: network-config
+    content: |-
+      network:
+        version: 2
+        ethernets:
+          ens2:
+            dhcp4: true
+          ens3:
+            dhcp4: false
+            addresses:
+              - 10.99.0.1/24
+            routes:
+              - to: 10.20.0.0/24
+                via: 10.99.0.100
+              - to: 10.30.0.0/24
+                via: 10.99.0.100
+              - to: 10.40.0.0/24
+                via: 10.99.0.100
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n9
+  image_definition: null
+  label: ubuntu-0
+  node_definition: ubuntu
+  parameters: {}
+  ram: null
+  tags: []
+  x: 240
+  y: 40
+  interfaces:
+  - id: i0
+    label: ens2
+    mac_address: null
+    type: physical
+    slot: 0
+  - id: i1
+    label: ens3
+    mac_address: null
+    type: physical
+    slot: 1
+  - id: i2
+    label: ens4
+    mac_address: null
+    type: physical
+    slot: 2
+- boot_disk_size: null
+  configuration: []
+  cpu_limit: null
+  cpus: null
+  data_volume: null
+  hide_links: false
+  id: n10
+  image_definition: null
+  label: ext-conn-1
+  node_definition: external_connector
+  parameters: {}
+  ram: null
+  tags: []
+  x: 240
+  y: -120
+  interfaces:
+  - id: i0
+    label: port
+    mac_address: null
+    type: physical
+    slot: 0
 links:
-  - id: l0
-    n1: n0
-    n2: n1
-    i1: i0
-    i2: i1
-    conditioning: {}
-    label: ext-conn-0-port<->iol-0-Ethernet0/0
-  - id: l1
-    n1: n1
-    n2: n2
-    i1: i2
-    i2: i1
-    conditioning: {}
-    label: iol-0-Ethernet0/1<->iol-1-Ethernet0/0
-  - id: l2
-    n1: n2
-    n2: n5
-    i1: i2
-    i2: i1
-    conditioning: {}
-    label: iol-1-Ethernet0/1<->iol-l2-0-Ethernet0/0
-  - id: l3
-    n1: n10
-    n2: n9
-    i1: i0
-    i2: i0
-    conditioning: {}
-    label: ext-conn-1-port<->ubuntu-0-ens2
-  - id: l4
-    n1: n1
-    n2: n3
-    i1: i3
-    i2: i1
-    conditioning: {}
-    label: E1-Ethernet0/2<->iol-2-Ethernet0/0
-  - id: l5
-    n1: n1
-    n2: n4
-    i1: i4
-    i2: i1
-    conditioning: {}
-    label: E1-Ethernet0/3<->iol-3-Ethernet0/0
-  - id: l6
-    n1: n1
-    n2: n9
-    i1: i5
-    i2: i1
-    conditioning: {}
-    label: E1-Ethernet1/0<->ubuntu-0-ens3
-  - id: l7
-    n1: n3
-    n2: n6
-    i1: i2
-    i2: i1
-    conditioning: {}
-    label: iol-2-Ethernet0/1<->iol-l2-1-Ethernet0/0
-  - id: l8
-    n1: n3
-    n2: n8
-    i1: i3
-    i2: i1
-    conditioning: {}
-    label: iol-2-Ethernet0/2<->iol-l2-3-Ethernet0/0
-  - id: l9
-    n1: n4
-    n2: n7
-    i1: i2
-    i2: i1
-    conditioning: {}
-    label: iol-3-Ethernet0/1<->iol-l2-2-Ethernet0/0
+- id: l0
+  n1: n0
+  n2: n1
+  i1: i0
+  i2: i1
+  conditioning: {}
+  label: ext-conn-0-port<->iol-0-Ethernet0/0
+- id: l1
+  n1: n1
+  n2: n2
+  i1: i2
+  i2: i1
+  conditioning: {}
+  label: iol-0-Ethernet0/1<->iol-1-Ethernet0/0
+- id: l2
+  n1: n2
+  n2: n5
+  i1: i2
+  i2: i1
+  conditioning: {}
+  label: iol-1-Ethernet0/1<->iol-l2-0-Ethernet0/0
+- id: l3
+  n1: n10
+  n2: n9
+  i1: i0
+  i2: i0
+  conditioning: {}
+  label: ext-conn-1-port<->ubuntu-0-ens2
+- id: l4
+  n1: n1
+  n2: n3
+  i1: i3
+  i2: i1
+  conditioning: {}
+  label: E1-Ethernet0/2<->iol-2-Ethernet0/0
+- id: l5
+  n1: n1
+  n2: n4
+  i1: i4
+  i2: i1
+  conditioning: {}
+  label: E1-Ethernet0/3<->iol-3-Ethernet0/0
+- id: l6
+  n1: n1
+  n2: n9
+  i1: i5
+  i2: i1
+  conditioning: {}
+  label: E1-Ethernet1/0<->ubuntu-0-ens3
+- id: l7
+  n1: n3
+  n2: n6
+  i1: i2
+  i2: i1
+  conditioning: {}
+  label: iol-2-Ethernet0/1<->iol-l2-1-Ethernet0/0
+- id: l8
+  n1: n3
+  n2: n8
+  i1: i3
+  i2: i1
+  conditioning: {}
+  label: iol-2-Ethernet0/2<->iol-l2-3-Ethernet0/0
+- id: l9
+  n1: n4
+  n2: n7
+  i1: i2
+  i2: i1
+  conditioning: {}
+  label: iol-3-Ethernet0/1<->iol-l2-2-Ethernet0/0
 lab:
   description: ''
   notes: ''
