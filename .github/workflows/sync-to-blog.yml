@@ -35,8 +35,9 @@ jobs:
           mkdir -p blog/_posts
 
           # Snyggt repo-namn (Enterprise Lab)
-          pretty_repo=$(echo "${{ github.event.repository.name }}" | tr '-' ' ' | sed 's/.*/\u&/')
-
+          repo_name="${{ github.event.repository.name }}"
+          pretty_repo=$(echo "$repo_name" | tr '-' ' ' | sed 's/.*/\u&/')
+          
           find lab_doc -type f -name "*.md" | while read file; do
             filename=$(basename "$file")
             dirname=$(basename "$(dirname "$file")")
