@@ -34,7 +34,6 @@ jobs:
         run: |
           mkdir -p blog/_posts
 
-          # Plocka ut repo-namn en gång
           repo_name="${{ github.event.repository.name }}"
           pretty_repo=$(echo "$repo_name" | tr '-' ' ' | sed 's/.*/\u&/')
 
@@ -43,39 +42,13 @@ jobs:
             dirname=$(basename "$(dirname "$file")")
             cleanname="${filename%.md}"
 
-            # Snygg titel baserat på filnamnet
             pretty_cleanname=$(echo "$cleanname" | tr '-' ' ' | sed 's/.*/\u&/')
             title="$pretty_cleanname ($pretty_repo)"
 
-            # Kategori baserat på undermappen
             category=$(echo "$dirname" | tr '[:upper:]' '[:lower:]')
 
-            # Leta efter befintlig post baserat på source_path
-            existing=$(grep -Rl "source_path: \"$file\"" blog/_posts/ || true)
+            # NY FILNAMNSLOGIK (stabil, ingen datum-del)
+            slug=$(echo "$file" | tr '/' '-' | tr '[:upper:]' '[:lower:]')
+            newname="${repo_name}-${slug}.md"
 
-            if [ -n "$existing" ]; then
-              echo "Updating existing post: $existing"
-              newname=$(basename "$existing")
-            else
-              newname="$(date +%Y-%m-%d)-$repo_name-$filename"
-            fi
-
-            {
-              echo "---"
-              echo "title: \"$title\""
-              echo "categories: [\"$category\"]"
-              echo "source_repo: \"$repo_name\""
-              echo "source_path: \"$file\""
-              echo "---"
-              echo
-              sed 's#](/diagrams/#](/images/#g' "$file"
-            } > "blog/_posts/$newname"
-          done
-      - name: Commit and push changes to blog
-        run: |
-          cd blog
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add .
-          git commit -m "Sync MD files and images from Repo A" || echo "No changes to commit"
-          git push
+            # Om filen redan finns
