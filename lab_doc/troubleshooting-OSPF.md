@@ -5,9 +5,9 @@ Find the github repository for the lab files [here](https://github.com/dannebrob
 
 ## Ticket ID: OSPF‑Troubleshooting‑INC0000456
 
-OSPF Troubleshooting Ticket – E1, R1, R2, R3
+OSPF Troubleshooting Ticket – E1 and R1
 1. Summary
-OSPF adjacency is not forming between E1 and routers R1, R2, and R3. Layer‑2 communication is functioning, but OSPF does not reach FULL state. There is suspicion of mismatched interface parameters, subnet masks, or area configuration.
+OSPF adjacency is not forming between E1 and router R1. Layer‑2 communication is functioning, but OSPF does not reach FULL state. There is suspicion of mismatched interface parameters, subnet masks, or area configuration.
 
 2. Environment
 Affected Devices
@@ -55,7 +55,7 @@ After identifying the subnet mask mismatch, I updated the IP address configurati
 
 Next, I confirmed Layer‑2 connectivity by pinging the neighbor IP addresses and checking the ARP tables, by running the `show arp` command. And I got the expected results. These two commands confirmed that there were no issues with physical connectivity or basic IP reachability between E1 and R1. This helped me narrow down the issue to the OSPF configuration rather than a physical or Layer‑2 problem.
 
-Finally, I confirmed that OSPF was running on the correct interfaces by using commands like `show ip protocols` and `show run | section ospf`. This helped me ensure that OSPF was properly configured on both E1 and R1. Once this was confirmed, I could move in the network and solve the issue with R2 and R3, which had the same problem as R1, and I fixed it by applying the same solution, which was to ensure that the subnet masks were consistent on both sides of the link.
+Finally, I confirmed that OSPF was running on the correct interfaces by using the commands: `show ip protocols` and `show run | section ospf`. This helped me ensure that OSPF was properly configured on both E1 and R1. Once this was confirmed, I confirmed that ospf also worked as expected on R2 and R3.
 
 ## Conclusion
 In conclusion, the OSPF adjacency issue between E1 and R1 was caused by a subnet mask mismatch. By verifying the interface parameters, OSPF configuration, and Layer‑2 connectivity, I was able to identify and resolve the issue. This troubleshooting process really shows the importance of attention to detail when configuring OSPF, as even a small mismatch in subnet masks can prevent routers from forming adjacencies and exchanging routing information. 
