@@ -57,7 +57,7 @@ ssh version 2
 !
 interface Ethernet0/0
  description Link to E1
- ip address 10.20.0.2 255.255.255.0
+ ip address 10.20.0.2 255.255.255.252
  ip ospf 1 area 10
 !
 interface Ethernet0/1
