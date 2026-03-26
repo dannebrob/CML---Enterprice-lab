@@ -1,0 +1,34 @@
+### NetBox Configuration Template (Ansible) ###
+
+# Allowed hosts
+ALLOWED_HOSTS = {*}
+
+# Database configuration
+DATABASE = {
+    'NAME': '{{ db_name }}',
+    'USER': '{{ db_user }}',
+    'PASSWORD': '{{ db_password }}',
+    'HOST': '{{ db_host }}',
+    'PORT': '{{ db_port }}',
+}
+
+# Secret key
+SECRET_KEY = '{{ secret_key }}'
+
+# Redis configuration
+REDIS = {
+    'tasks': {
+        'HOST': '{{ redis_host }}',
+        'PORT': {{ redis_port }},
+        'PASSWORD': '{{ redis_password }}',
+        'DATABASE': 0,
+        'SSL': False,
+    },
+    'caching': {
+        'HOST': '{{ redis_host }}',
+        'PORT': {{ redis_port }},
+        'PASSWORD': '{{ redis_password }}',
+        'DATABASE': 1,
+        'SSL': False,
+    }
+}
